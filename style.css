@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #003399;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    background-color: #003399;
+}
+
+.adjust_right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: self-end;
+    left: 422px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    background-color: #0044cc;
+    border-radius: 5px;
+}
+
+.dropdown-menu,
+.dropdown-submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #0044cc;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.dropdown-menu a,
+.dropdown-submenu-content a {
+    padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+    display: block;
+    left: 100%;
+    top: 0;
+}
+
+.dropdown-submenu-content {
+    padding-left: 0;
+}
+
+.login-btn {
+    background-color: white;
+    color: #003399;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-btn:hover {
+    background-color: #0044cc;
+    color: white;
+}
